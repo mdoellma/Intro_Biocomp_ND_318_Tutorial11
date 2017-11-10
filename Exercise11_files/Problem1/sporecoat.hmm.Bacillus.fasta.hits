@@ -1,0 +1,14 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A6BZD2|A6CT85_9BACI -          sporecoat            -            5.9e-35  118.6  16.0   6.5e-35  118.5  16.0   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Bacillus.fasta
+# Option settings: ./hmmsearch --tblout sporecoat.hmm.Bacillus.fasta.hits sporecoat.hmm Bacillus.fasta 
+# Current dir:     /home/devin/Python/exercise11/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Fri Nov 10 11:12:11 2017
+# [ok]

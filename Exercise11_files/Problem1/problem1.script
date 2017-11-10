@@ -12,6 +12,7 @@ for files in sigma.hmm sporecoat.hmm transporter.hmm
 do
 	for fastas in *.fasta
 	do
-		./hmmsearch --tblout $files.hits $files $fastas	
+		./hmmsearch --tblout $files.$fastas.hits $files $fastas	
+		cat $files.$fastas.hits | grep -v "#" | awk '{print $1, $3, $6}' > hits.table
 	done
 done

@@ -1,0 +1,14 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|B7RKP8|B7RKP8_9RHOB -          transporter          -               0.05   10.3   5.4      0.11    9.1   1.9   2.2   2   0   0   2   2   2   0 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      transporter.hmm
+# Target file:     Roseobacter.fasta
+# Option settings: ./hmmsearch --tblout transporter.hmm.Roseobacter.fasta.hits transporter.hmm Roseobacter.fasta 
+# Current dir:     /home/devin/Python/exercise11/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Fri Nov 10 11:12:12 2017
+# [ok]

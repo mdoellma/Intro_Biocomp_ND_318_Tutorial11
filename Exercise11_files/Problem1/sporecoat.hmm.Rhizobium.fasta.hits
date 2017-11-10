@@ -1,0 +1,13 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Rhizobium.fasta
+# Option settings: ./hmmsearch --tblout sporecoat.hmm.Rhizobium.fasta.hits sporecoat.hmm Rhizobium.fasta 
+# Current dir:     /home/devin/Python/exercise11/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Fri Nov 10 11:12:11 2017
+# [ok]
