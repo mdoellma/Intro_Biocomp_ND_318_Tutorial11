@@ -1,0 +1,35 @@
+ 1915  hmmbuild -h
+ 1916  hmmsearch -h
+ 1917  clear
+ 1918  cd ../..
+ 1919  cd ..
+ 1920  ls
+ 1921  ls -F
+ 1922  muscle -in Desktop/Biocomputing/Lecture21files/sigma70.ref -out sigma70.muscle
+ 1923  sudo apt install muscle
+ 1924  muscle -in Desktop/Biocomputing/Lecture21files/sigma70.ref -out sigma70.muscle
+ 1925  muscle -in /Desktop/Biocomputing/Lecture21files/sigma70.ref -out sigma70.muscle
+ 1926  ls
+ 1927  muscle -in ./Lecture21files/sigma70.refs -out sigma70.muscle
+ 1928  cat sigma70.muscle
+ 1929  clear
+ 1930  cat sigma70.refs | head -10
+ 1931  cat ./Lecture21files/sigma70.refs | head -10
+ 1932  cat ./Lecture21files/sigma70.muscle | head -10
+ 1933  cat sigma70.muscle |head -10
+ 1934  cp sigma70.muscle ./Lecture21files/sigma70.muscle
+ 1935  ls
+ 1936  cat ./Lecture21files/sigma70.muscle | hmmbuild sigma70.hmmbuild 
+ 1937  hmmbuild sigma70.hmmbuild ./Lecture21files/sigma70.muscle
+ 1938  ls
+ 1939  cp sigma70.hmmbuild ./Lecture21files/sigma70.hmmbuild
+ 1940  hmmsearch [--tblout] ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta
+ 1941  hmmsearch [--tblout]sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta
+ 1942  hmmsearch [--tblout] ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta
+ 1943  hmmsearch  ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta | ./Lecture21files/sigma70_Roseobacter
+ 1944  hmmsearch --tblout ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta
+ 1945  hmmsearch -h
+ 1946  hmmsearch --tblout ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta
+ 1947  hmmsearch --tblout ./Lecture21files/sigma70.hmmbuild ./Lecture21files/Roseobacter.fasta | sigma70.hmmsearch
+ 1948  hmmsearch --tblout ./Lecture21files/sigma70.hmmsearch ./Lecture21files/Roseobacter.fasta
+ 1949  cd Desktop/Biocomputing/
