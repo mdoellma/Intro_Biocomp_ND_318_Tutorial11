@@ -14,5 +14,5 @@ tr|A0A1W9LA94|A0A1W9LA94_9BACT -          sigma                -            5.1e
 # Target file:     Verrucomicrobia.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Verrucomicrobia.fasta.hits sigma.hmm Verrucomicrobia.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

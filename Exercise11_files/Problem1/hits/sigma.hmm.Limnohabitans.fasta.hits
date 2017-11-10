@@ -16,5 +16,5 @@ tr|A0A0P0M9Z4|A0A0P0M9Z4_9BURK -          sigma                -            3.2e
 # Target file:     Limnohabitans.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Limnohabitans.fasta.hits sigma.hmm Limnohabitans.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

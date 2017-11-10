@@ -10,5 +10,5 @@ tr|A6BZD2|A6CT85_9BACI -          sporecoat            -            5.9e-35  118
 # Target file:     Bacillus.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sporecoat.hmm.Bacillus.fasta.hits sporecoat.hmm Bacillus.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

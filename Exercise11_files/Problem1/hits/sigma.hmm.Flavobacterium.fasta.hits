@@ -33,5 +33,5 @@ tr|A0A1S1J312|A0A1S1J312_9FLAO -          sigma                -             0.0
 # Target file:     Flavobacterium.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Flavobacterium.fasta.hits sigma.hmm Flavobacterium.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

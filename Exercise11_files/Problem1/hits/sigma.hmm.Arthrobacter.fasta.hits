@@ -19,5 +19,5 @@ tr|A0A0P7GAX7|A0A0P7GAX7_9MICC -          sigma                -            9.8e
 # Target file:     Arthrobacter.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Arthrobacter.fasta.hits sigma.hmm Arthrobacter.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

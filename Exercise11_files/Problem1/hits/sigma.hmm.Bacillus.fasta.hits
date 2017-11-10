@@ -33,5 +33,5 @@ tr|A6CL73|A6CL73_9BACI -          sigma                -            5.8e-09   33
 # Target file:     Bacillus.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Bacillus.fasta.hits sigma.hmm Bacillus.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]

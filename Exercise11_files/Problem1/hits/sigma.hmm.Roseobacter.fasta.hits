@@ -16,5 +16,5 @@ tr|B7RSA6|B7RSA6_9RHOB -          sigma                -            7.6e-14   49
 # Target file:     Roseobacter.fasta
 # Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout sigma.hmm.Roseobacter.fasta.hits sigma.hmm Roseobacter.fasta 
 # Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Fri Nov 10 12:06:37 2017
+# Date:            Fri Nov 10 12:12:32 2017
 # [ok]
