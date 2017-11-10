@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 #-------------------------------------PART 2---------------------------------------------
 
 #set working directory
-os.chdir('/Users/omneelay/Desktop/Exercise11/Intro_Biocomp_ND_318_Tutorial11/Problem2/')
+os.chdir('/Users/omneelay/Desktop/Exercise11/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem2/')
 
 #open read and write files
 infile=open("motifsort.fasta",'r')
