@@ -16,3 +16,12 @@ for seq in *.ref; do
 	rm $name.msa
 done
 
+for file in *.fasta; do
+	n1="$(echo $file | cut -d "." -f 1)"
+	for model in *.hmm; do
+		n2="$(echo $model | cut -d "." -f 1)"
+		./hmmsearch --tblout $n1-$n2.tbl $model $file
+	done
+done
+
+rm *.hmm
