@@ -2,24 +2,38 @@ import re
 import numpy
 import pandas
 
-master=open('motifsort.fasta','r')
-m1=open('motif1.fasta','w')
-m2=open('motif2.fasta','w')
-ee=open('everythingelse.fasta','w')
+#Load files
+master_in = open('motifsort.fasta','r')
+m1_out = open('motif1.fasta','w')
+m2_out = open('motif2.fasta','w')
+misc_out = open('misc_motif.fasta','w')
 
-
+#define patterns
 motif1=r'AKKPRVZE'
-motif2='AAQWWRNYGG'
+motif2=r'AAQWWRNYGG'
 
-for line in master:
+#loop line by line
+for line in master_in:
     line=line.strip()
-    if > not in line:
-        if motif1 in line:
-            m1.write('')
+    #Define ID
+    if (line[0] == ">"):
+        ID = line
+    else (">" not in line):
+        #add to out files based on presence of certain motif
+        if (re.search(motif1, line)):
+            m1_out.write(ID + "\n")
+            m1_out.write(line + "\n")
+        
+        elif (re.search(motif2, line)):
+            m2_out.write(ID + "\n")
+            m2_out.write(line + "\n")
+        else:
+            misc_out.write(ID + "\n")
+            misc_out.write(line + "\n")
 
-
-master.close()
-m1.close()
-m2.close()
-ee.close()
+#close all files
+master_in.close()
+m1_out.close()
+m2_out.close()
+misc_out.close()
     
