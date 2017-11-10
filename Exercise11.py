@@ -9,10 +9,6 @@ from plotnine import *
 from ggplot import *
 import matplotlib.pyplot as plt
 
-#-------------------------------------PART 1---------------------------------------------
-
-##ADD PART 1 CODE HERE AND SET APPROPRIATE WORKING DIRECTORIES
-
 #-------------------------------------PART 2---------------------------------------------
 
 #set working directory
