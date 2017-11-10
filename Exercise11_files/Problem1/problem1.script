@@ -1,3 +1,6 @@
+### Remember to change the paths for muscle and hmm tools
+
+
 #Problem 1
 #Align references using muscle
 /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/muscle -in sigma.ref -out sigma.align
