@@ -1,4 +1,17 @@
 #Problem 1
-
-
-#Problem 2
+#muscle
+./muscle -in sigma.ref -out sigma.align
+./muscle -in sporecoat.ref -out sporecoat.align
+./muscle -in transporter.ref -out transporter.align
+#hmm profile
+./hmmbuild sigma.hmm sigma.align
+./hmmbuild sporecoat.hmm sporecoat.align
+./hmmbuild transporter.hmm transporter.align
+#loop the search 
+for files in sigma.hmm sporecoat.hmm transporter.hmm
+do
+	for fastas in *.fasta
+	do
+		./hmmsearch --tblout $files.hits $files $fastas	
+	done
+done
