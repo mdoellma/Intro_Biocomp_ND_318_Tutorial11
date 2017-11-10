@@ -1,0 +1,14 @@
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A1S1J3R7|A0A1S1J3R7_9FLAO -          transporter          -            3.5e-09   33.9  26.4   5.1e-09   33.3  26.4   1.3   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      transporter.hmm
+# Target file:     Flavobacterium.fasta
+# Option settings: /Users/brittnibertolet/Desktop/bcLectures/Bioinformatics/hmmer/binaries/hmmsearch --tblout transporter.hmm.Flavobacterium.fasta.hits transporter.hmm Flavobacterium.fasta 
+# Current dir:     /Users/brittnibertolet/Desktop/bcTutorials/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Fri Nov 10 12:06:38 2017
+# [ok]
