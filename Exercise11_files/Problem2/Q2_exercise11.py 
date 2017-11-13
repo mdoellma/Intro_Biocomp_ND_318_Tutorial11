@@ -4,7 +4,7 @@
 
 #load packages 
 import pandas as pd
-import 
+import re 
 
 
 #open files to read and write 
@@ -15,20 +15,26 @@ outfile3 = open ("motif3.sorted", 'w')
 
 #motif 1 == AKKPRVZE
 #motif 2 == AAQWWRNYGG
+motif_1 = re.compile(r"[A][K][K][P][R][V][Z][E]")
+motif_2 = re.compile(r"[A]*[Q][W]*[R][N][Y][G]*")
 
 for line in infile:
     line = line.strip()
     if line[0] == ">":
         ID = line 
+    elif motif_1.search(line) in line:
+         outfile1.write (ID + "\n")
+         outfile1.write(line + "\n")
+    elif motif_2.search(line):
+        outfile2.write(ID + "\n")
+        outfile2.write(line + "\n")
     else:
-        if motif1 in line:
-            outfile1.write (ID + "\n")
-            outfile1.write(line + "\n")
-        elif motif2 in line:
-            outfile2.write(ID + "\n")
-            outfile2.write(line + "\n")
-        else:
-            outfile3.write(ID + "\n")
-            outfile3.write(line + "\n")
+        outfile3.write(ID + "\n")
+        outfile3.write(line + "\n")
 
             
+infile.close()
+outfile1.close()
+outfile2.close()
+outfile3.close()
+
