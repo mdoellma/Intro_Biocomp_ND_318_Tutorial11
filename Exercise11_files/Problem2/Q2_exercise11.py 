@@ -1,0 +1,34 @@
+#Exercise 11
+#Authors: Melissa Stephens and Janice Love
+#Date: Nov. 10, 2017
+
+#load packages 
+import pandas as pd
+import 
+
+
+#open files to read and write 
+infile = open ("motifsort.fasta", 'r')
+outfile1 = open ("motif1.sorted",'w')
+outfile2 = open ("motif2.sorted", 'w')
+outfile3 = open ("motif3.sorted", 'w')
+
+#motif 1 == AKKPRVZE
+#motif 2 == AAQWWRNYGG
+
+for line in infile:
+    line = line.strip()
+    if line[0] == ">":
+        ID = line 
+    else:
+        if motif1 in line:
+            outfile1.write (ID + "\n")
+            outfile1.write(line + "\n")
+        elif motif2 in line:
+            outfile2.write(ID + "\n")
+            outfile2.write(line + "\n")
+        else:
+            outfile3.write(ID + "\n")
+            outfile3.write(line + "\n")
+
+            
