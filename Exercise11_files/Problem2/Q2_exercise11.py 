@@ -1,9 +1,10 @@
 #Exercise 11
 #Authors: Melissa Stephens and Janice Love
 #Date: Nov. 10, 2017
+#Last updated: Nov. 13, 2017 
+
 
 #load packages 
-import pandas as pd
 import re 
 
 
@@ -13,28 +14,28 @@ outfile1 = open ("motif1.sorted",'w')
 outfile2 = open ("motif2.sorted", 'w')
 outfile3 = open ("motif3.sorted", 'w')
 
+#create regex objects for search loop
 #motif 1 == AKKPRVZE
 #motif 2 == AAQWWRNYGG
-motif_1 = re.compile(r"[A][K][K][P][R][V][Z][E]")
-motif_2 = re.compile(r"[A][A][Q][W]+[R][N][Y][G]+")
+motif_1 = re.compile(r'[A][K]+[P][R][V][Z][E]')
+motif_2 = re.compile(r'[A]+[Q][W]+[R][N][Y][G]+')
 
+#loop through file and sort sequences by motif 1, motif 2, or neither 
 for line in infile:
     line = line.strip()
-    if line[0] == ">":
+    if  ">" in line:
         ID = line 
-    elif ">" != line:
-        match = re.search(r"[A][K][K][P][R][V][Z][E]", line)
-        if match == True:
-                outfile1.write (ID + "\n")
-                outfile1.write(line + "\n")
-    elif motif_2.search(line):
+    if motif_1.search(line):
+        outfile1.write (ID + "\n")
+        outfile1.write(line + "\n")
+    elif motif_2.search(line): 
         outfile2.write(ID + "\n")
         outfile2.write(line + "\n")
     else:
         outfile3.write(ID + "\n")
         outfile3.write(line + "\n")
 
-            
+#close files when done             
 infile.close()
 outfile1.close()
 outfile2.close()

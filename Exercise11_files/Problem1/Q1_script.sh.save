@@ -1,0 +1,10 @@
+#Exercise 11, Question 1
+#Authors: Janice Love and  Melissa Stephens
+#Date: Nov. 13, 2017
+
+#create alignments, HMM for each reference set of sequences 
+#search for protein type: sigma factor, sugar transporter, spore formation component
+#generate single results file: row for each match from all HMM-proteome combinations 
+#include columns indicating proteome, HMM-match, e-value with each match 
+
+
