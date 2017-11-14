@@ -2,9 +2,22 @@
 #Authors: Janice Love and  Melissa Stephens
 #Date: Nov. 13, 2017
 
-#create alignments, HMM for each reference set of sequences 
-#search for protein type: sigma factor, sugar transporter, spore formation component
-#generate single results file: row for each match from all HMM-proteome combinations 
-#include columns indicating proteome, HMM-match, e-value with each match 
+#import packages
+import pandas
 
+#create alignments (using Muscle) for each reference set of sequences
+muscle -in sigma.ref -out sigma.align
+muscle -in sporecoat.ref -out sporecoat.align
+muscle -in transporter.ref -out transporter.align
+ 
+#build a profile  HMM model (using hmmer) from each alignment file
+hmmbuild sigma.hmmbuild sigma.align
+hmmbuild sporecoat.hmmbuild sporecoat.align
+hmmbuild transporter.hmmbuild transporter.align
+
+#search fasta files for protein type: sigma factor, sugar transporter, spore formation component
+
+#generate single results file: row for each match from all HMM-proteome combinations 
+#fit to table: include columns indicating species/proteome, HMM-match, e-value with each match 
+#Species/proteome comes from sequence names. We only care about the last few characters _XXXX, remove all characters prior (incl pipes)
 
