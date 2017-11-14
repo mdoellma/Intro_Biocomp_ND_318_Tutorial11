@@ -2,6 +2,7 @@
 #Melissa Stephens and Janice Love
 
 #Open files and import packages
+import pandas
 
 #Create alignmens (using Muscle) for each fasta file
 
