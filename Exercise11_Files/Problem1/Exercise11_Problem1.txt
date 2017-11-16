@@ -1,1 +1,11 @@
-Testing 123
+#Align sequences using muscle
+#sigma.ref
+./muscle -in sigma.ref -out sigma.align
+#sporecoat.ref
+./muscle -in sporecoat.ref -out sporecoat.align
+#transporter.ref
+./muscle -in transporter.ref -out transporter.align
+
+
+
+
