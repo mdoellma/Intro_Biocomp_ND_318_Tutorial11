@@ -6,6 +6,12 @@
 #transporter.ref
 ./muscle -in transporter.ref -out transporter.align
 
+#Hmm for three ref files
+./hmmbuild sigma.hmm sigma.align
+./hmmbuild sporecoat.hmm sporecoat.align
+./hmmbuild transporter.hmm transporter.align
+
+
 
 
 
