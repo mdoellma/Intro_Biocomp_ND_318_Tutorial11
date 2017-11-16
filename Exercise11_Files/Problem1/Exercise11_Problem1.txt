@@ -12,11 +12,11 @@
 ./hmmbuild transporter.hmm transporter.align
 
 #for loop for finding protein type in proteome files
-for protein in *.fasta
+for species in *.fasta #put fasta file name at the beginning of file to avoid overwriting file
 do 
-	./hmmsearch --tblout $protein.sigma.out sigma.hmm $protein
-	./hmmsearch --tblout $protein.sporecoat.out sporecoat.hmm $protein
-	./hmmsearch --tblout $protein.transporter.out transporter.hmm $protein
+	./hmmsearch --tblout $species.sigma.out sigma.hmm $species
+	./hmmsearch --tblout $species.sporecoat.out sporecoat.hmm $species
+	./hmmsearch --tblout $species.transporter.out transporter.hmm $species
 done 
  
 
