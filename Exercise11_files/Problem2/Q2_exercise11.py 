@@ -3,10 +3,8 @@
 #Date: Nov. 10, 2017
 #Last updated: Nov. 13, 2017 
 
-
 #load packages 
 import re 
-
 
 #open files to read and write 
 infile = open ("motifsort.fasta", 'r')
