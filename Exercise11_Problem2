@@ -1,0 +1,38 @@
+#Problem 2
+#open packages
+import re
+import pandas
+import numpy
+import os
+
+#open files to read & write
+infile = open("motifsort.fasta","r")
+outfile1 = open("motif1out","w")
+outfile2 = open("motif2out","w")
+outfile3 = open("NoMatchOut","w")
+
+#define variables
+motif1 = 'AKKPRVZE'
+motif2 = 'AAQWWRNYGG'
+
+#loop over file 
+for line in infile:
+    line = line.strip()
+    if line[0] == ">":
+        ID=line
+    else:    
+        if motif1 in line:
+            outfile1.write(ID + "\n")
+            outfile1.write(line + "\n")
+        elif motif2 in line:
+            outfile2.write(ID + "\n")
+            outfile2.write(line + "\n")
+        else:    
+            outfile3.write(ID + "\n")
+            outfile3.write(line + "\n")
+            
+#close files
+infile.close()
+outfile1.close()
+outfile2.close()
+outfile3.close()

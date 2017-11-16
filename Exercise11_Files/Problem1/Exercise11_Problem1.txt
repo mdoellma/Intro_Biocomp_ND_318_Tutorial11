@@ -1,0 +1,23 @@
+#Align sequences using muscle
+#sigma.ref
+./muscle -in sigma.ref -out sigma.align
+#sporecoat.ref
+./muscle -in sporecoat.ref -out sporecoat.align
+#transporter.ref
+./muscle -in transporter.ref -out transporter.align
+
+#Hmm for three ref files
+./hmmbuild sigma.hmm sigma.align
+./hmmbuild sporecoat.hmm sporecoat.align
+./hmmbuild transporter.hmm transporter.align
+
+#for loop for finding protein type in proteome files
+for species in *.fasta #put fasta file name at the beginning of file to avoid overwriting file
+do 
+	./hmmsearch --tblout $species.sigma.out sigma.hmm $species
+	./hmmsearch --tblout $species.sporecoat.out sporecoat.hmm $species
+	./hmmsearch --tblout $species.transporter.out transporter.hmm $species
+done 
+
+#Changing sample names to last 4 letters only
+cat *.out | grep -v "#" | awk '{print$1,$3,$5}' | sed -E 's/tr\|\w{6,10}\|\w{6,10}_9//' > HMMTable.txt 
