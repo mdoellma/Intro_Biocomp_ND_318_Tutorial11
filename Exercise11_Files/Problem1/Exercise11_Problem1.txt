@@ -11,6 +11,15 @@
 ./hmmbuild sporecoat.hmm sporecoat.align
 ./hmmbuild transporter.hmm transporter.align
 
+#for loop for finding protein type in proteome files
+for protein in *.fasta
+do 
+	./hmmsearch --tblout $protein.sigma.out sigma.hmm $protein
+	./hmmsearch --tblout $protein.sporecoat.out sporecoat.hmm $protein
+	./hmmsearch --tblout $protein.transporter.out transporter.hmm $protein
+done 
+ 
+
 
 
 
