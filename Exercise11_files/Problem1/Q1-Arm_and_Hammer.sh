@@ -4,6 +4,9 @@ This script constructs a sequence alignment for each .ref file in the
 diretory (muscle) the constructs a hidden markov model for each (hmmbuild).
 Finally, results are output (hmmsearch) and concatenated into one file.
 
+Tables (.tbl) are not deleted, however intermediate alignment (.msa) and
+Hidden Markov model (.hmm) files are. Output is hmmOut.txt
+
 Binary or symlink to binary must be in directory for each tool used -
 	muscle, hmmbuild, hmmsearch.
 '
@@ -25,3 +28,5 @@ for file in *.fasta; do
 done
 
 rm *.hmm
+
+cat *.tbl | grep -v "#" | awk '{print $1 = substr($1, length($1)-3, length($1)), $3, $5}' > hmmOut.txt
