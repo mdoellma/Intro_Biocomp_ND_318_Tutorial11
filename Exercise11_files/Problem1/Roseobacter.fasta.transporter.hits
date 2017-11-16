@@ -10,5 +10,5 @@ tr|B7RKP8|B7RKP8_9RHOB -          transporter          -               0.05   10
 # Target file:     Roseobacter.fasta
 # Option settings: ./hmmsearch --tblout Roseobacter.fasta.transporter.hits transporter.hmmbuild Roseobacter.fasta 
 # Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Thu Nov 16 16:16:58 2017
+# Date:            Thu Nov 16 16:44:21 2017
 # [ok]

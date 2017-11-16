@@ -25,5 +25,4 @@ for file in *.fasta
 #generate single results file: row for each match from all HMM-proteome combinations 
 	#fit to table: include columns indicating species/proteome, HMM-match, e-value with each match 
 	#Species/proteome comes from sequence names. We only care about the last few characters _XXXX, remove all characters prior (incl pipes)
-
-cat *.transporter.hits | grep -v "#" | less -S
+cat *.fasta.*.hits | grep -v "#" | awk '{print $1,$3,$5}'| sed -E 's/(tr)\|[A-Z0-9]+\|[A-Z0-9]+\_/ /g' | less -S

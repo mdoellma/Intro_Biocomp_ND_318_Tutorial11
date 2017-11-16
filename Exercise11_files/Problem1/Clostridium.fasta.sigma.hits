@@ -17,5 +17,5 @@ tr|R7MCS9|R7MCS9_9CLOT -          sigma                -            2.8e-11   39
 # Target file:     Clostridium.fasta
 # Option settings: ./hmmsearch --tblout Clostridium.fasta.sigma.hits sigma.hmmbuild Clostridium.fasta 
 # Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Thu Nov 16 16:16:57 2017
+# Date:            Thu Nov 16 16:44:20 2017
 # [ok]

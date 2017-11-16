@@ -9,5 +9,5 @@
 # Target file:     Rhizobium.fasta
 # Option settings: ./hmmsearch --tblout Rhizobium.fasta.sporecoat.hits sporecoat.hmmbuild Rhizobium.fasta 
 # Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Thu Nov 16 16:16:58 2017
+# Date:            Thu Nov 16 16:44:21 2017
 # [ok]

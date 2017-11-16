@@ -9,5 +9,5 @@
 # Target file:     Flavobacterium.fasta
 # Option settings: ./hmmsearch --tblout Flavobacterium.fasta.sporecoat.hits sporecoat.hmmbuild Flavobacterium.fasta 
 # Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Thu Nov 16 16:16:58 2017
+# Date:            Thu Nov 16 16:44:20 2017
 # [ok]

@@ -10,5 +10,5 @@ tr|A0A1S1J3R7|A0A1S1J3R7_9FLAO -          transporter          -            3.5e
 # Target file:     Flavobacterium.fasta
 # Option settings: ./hmmsearch --tblout Flavobacterium.fasta.transporter.hits transporter.hmmbuild Flavobacterium.fasta 
 # Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
-# Date:            Thu Nov 16 16:16:58 2017
+# Date:            Thu Nov 16 16:44:20 2017
 # [ok]
