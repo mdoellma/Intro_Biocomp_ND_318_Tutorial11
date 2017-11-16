@@ -4,7 +4,7 @@
 import re
 
 #read in original fasta file
-og_fasta=open("motifsort.fasta", "r")
+og_fasta=open("motifsort.fasta", "r")#make sure you have this file in your working directory
 
 #create the output files
 motif1=open("motif1.fasta","w")
