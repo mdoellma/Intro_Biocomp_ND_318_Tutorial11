@@ -1,5 +1,5 @@
 ### Remember to change the paths for muscle and hmm tools
-
+###If you have your tools in your directory, you can use ./muscle, ./hmmbuild, or ./hmmsearch
 
 #Problem 1
 #Align references using muscle
