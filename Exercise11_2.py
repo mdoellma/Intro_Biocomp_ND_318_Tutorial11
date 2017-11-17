@@ -3,7 +3,7 @@ import numpy
 import pandas
 
 #Load files
-master_in = open('motifsort.fasta','r')
+master_in = open('Exercise11_files/Problem2/motifsort.fasta','r')
 m1_out = open('motif1.fasta','w')
 m2_out = open('motif2.fasta','w')
 misc_out = open('misc_motif.fasta','w')
@@ -18,7 +18,7 @@ for line in master_in:
     #Define ID
     if (line[0] == ">"):
         ID = line
-    else (">" not in line):
+    else:
         #add to out files based on presence of certain motif
         if (re.search(motif1, line)):
             m1_out.write(ID + "\n")
@@ -37,3 +37,5 @@ m1_out.close()
 m2_out.close()
 misc_out.close()
     
+
+
