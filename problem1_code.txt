@@ -1,0 +1,27 @@
+infile = open("motifsort.fasta","r")
+outfile1 = open("with_motif1","w")
+outfile2 = open("with_motif2","w")
+outfile3 = open("no_motif","w")
+
+motif1=r"(AKKPRVZE)"
+motif2=r"(AAQWWRNYGG)"
+
+for line in infile:
+	line = line.strip()
+	if line[0] == ">":
+		ID = line
+	else:
+		if re.search(motif1, line):
+			outfile1.write(ID + "\n")
+			outfile1.write(line + "\n")
+		elif re.search(motif2, line):
+			outfile2.write(ID + "\n")
+			outfile2.write(line + "\n")
+		else:
+			outfile3.write(ID + "\n")
+			outfile3.write(line + "\n")
+
+infile.close()
+outfile1.close()
+outfile2.close()
+outfile3.close()
