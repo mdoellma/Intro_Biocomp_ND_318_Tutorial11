@@ -1,0 +1,20 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|B7RH33|B7RH33_9RHOB -          sigma                -            5.4e-22   75.3   0.4   1.1e-21   74.3   0.4   1.6   1   0   0   1   1   1   1 -
+tr|B7RGX5|B7RGX5_9RHOB -          sigma                -            1.2e-18   64.7   0.1   2.5e-18   63.6   0.1   1.6   1   0   0   1   1   1   1 -
+tr|B7RH17|B7RH17_9RHOB -          sigma                -            2.2e-18   63.8   0.2   5.2e-18   62.6   0.2   1.7   1   0   0   1   1   1   1 -
+tr|B7RI57|B7RI57_9RHOB -          sigma                -            4.7e-18   62.7   0.4   1.8e-17   60.9   0.1   2.0   2   0   0   2   2   2   1 -
+tr|B7RJL9|B7RJL9_9RHOB -          sigma                -            4.8e-18   62.7   0.2   8.3e-18   61.9   0.2   1.4   1   0   0   1   1   1   1 -
+tr|B7RH51|B7RH51_9RHOB -          sigma                -            3.7e-16   56.6   0.1   7.4e-16   55.7   0.1   1.5   1   0   0   1   1   1   1 -
+tr|B7RSA6|B7RSA6_9RHOB -          sigma                -            7.6e-14   49.2   0.4   1.4e-13   48.4   0.4   1.4   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmmbuild
+# Target file:     Roseobacter.fasta
+# Option settings: ./hmmsearch --tblout Roseobacter.fasta.sigma.hits sigma.hmmbuild Roseobacter.fasta 
+# Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Thu Nov 16 16:44:21 2017
+# [ok]

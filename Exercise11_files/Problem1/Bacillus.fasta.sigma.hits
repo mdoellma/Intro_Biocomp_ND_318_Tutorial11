@@ -1,0 +1,37 @@
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A6CNQ6|A6CNQ6_9BACI -          sigma                -            1.4e-24   83.6   0.2   2.4e-24   82.9   0.2   1.3   1   0   0   1   1   1   1 -
+tr|A6CSJ0|A6CSJ0_9BACI -          sigma                -            7.6e-23   78.1   0.4   1.2e-22   77.4   0.4   1.3   1   0   0   1   1   1   1 -
+tr|A6CJY3|A6CJY3_9BACI -          sigma                -            5.8e-22   75.3   0.9   8.3e-22   74.8   0.9   1.2   1   0   0   1   1   1   1 -
+tr|A6CU12|A6CU12_9BACI -          sigma                -            3.5e-20   69.6   0.0   5.6e-20   68.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CJR5|A6CJR5_9BACI -          sigma                -            4.9e-19   65.9   0.2   7.7e-19   65.3   0.2   1.3   1   0   0   1   1   1   1 -
+tr|A6CHU4|A6CHU4_9BACI -          sigma                -            1.7e-18   64.1   0.0   3.1e-18   63.4   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CMX3|A6CMX3_9BACI -          sigma                -            3.4e-18   63.2   0.0   7.2e-18   62.2   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A6CS17|A6CS17_9BACI -          sigma                -            4.5e-18   62.8   0.0   1.1e-17   61.6   0.0   1.7   1   0   0   1   1   1   1 -
+tr|A6CU10|A6CU10_9BACI -          sigma                -            6.7e-18   62.3   0.0   1.6e-17   61.0   0.0   1.7   2   0   0   2   2   2   1 -
+tr|A6CJX5|A6CJX5_9BACI -          sigma                -            3.9e-17   59.8   0.0   6.2e-17   59.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CSN9|A6CSN9_9BACI -          sigma                -            1.2e-16   58.3   0.1   2.8e-16   57.1   0.1   1.7   1   0   0   1   1   1   1 -
+tr|A6CTI9|A6CTI9_9BACI -          sigma                -            1.8e-16   57.7   0.0   3.9e-16   56.6   0.0   1.6   1   0   0   1   1   1   1 -
+tr|A6CPD2|A6CPD2_9BACI -          sigma                -            1.8e-16   57.7   0.0   2.9e-16   57.0   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CIS3|A6CIS3_9BACI -          sigma                -            2.4e-16   57.3   0.0   4.3e-16   56.5   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CII5|A6CII5_9BACI -          sigma                -            4.2e-16   56.5   0.0   3.3e-15   53.6   0.0   2.0   2   0   0   2   2   2   1 -
+tr|A6CI15|A6CI15_9BACI -          sigma                -            4.9e-16   56.3   0.5   1.3e-15   54.9   0.0   1.9   2   0   0   2   2   2   1 -
+tr|A6CU83|A6CU83_9BACI -          sigma                -            1.2e-15   55.0   0.1   1.9e-15   54.4   0.1   1.3   1   0   0   1   1   1   1 -
+tr|A6CI19|A6CI19_9BACI -          sigma                -            1.2e-14   51.8   0.4   2.2e-14   51.0   0.4   1.4   1   0   0   1   1   1   1 -
+tr|A6CQB8|A6CQB8_9BACI -          sigma                -            3.7e-14   50.3   0.0   6.5e-14   49.5   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CK70|A6CK70_9BACI -          sigma                -            3.7e-13   47.1   0.0   7.5e-13   46.1   0.0   1.6   1   0   0   1   1   1   1 -
+tr|A6CIW8|A6CIW8_9BACI -          sigma                -            9.7e-12   42.5   0.0   1.5e-11   41.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CIF2|A6CIF2_9BACI -          sigma                -            2.7e-11   41.1   0.1   4.9e-11   40.3   0.1   1.4   1   0   0   1   1   1   1 -
+tr|A6CM50|A6CM50_9BACI -          sigma                -            1.6e-09   35.4   0.0   5.7e-09   33.7   0.0   2.0   2   0   0   2   2   2   1 -
+tr|A6CL73|A6CL73_9BACI -          sigma                -            5.8e-09   33.6   0.0   8.3e-09   33.1   0.0   1.3   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmmbuild
+# Target file:     Bacillus.fasta
+# Option settings: ./hmmsearch --tblout Bacillus.fasta.sigma.hits sigma.hmmbuild Bacillus.fasta 
+# Current dir:     /Users/admin/Intro_Biocomp_ND_318_Tutorial11/Exercise11_files/Problem1
+# Date:            Thu Nov 16 16:44:20 2017
+# [ok]
